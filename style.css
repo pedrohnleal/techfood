@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/******************** BOTÕES ********************/
+.container-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.container-botao-registro {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container-botao-cadastro-alimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 19.2%;
+    width: 100%;
+}
+
+.container-botao-reservar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+}
+
+.botao {
+    background-color: #FF0000;
+    font-size: 24px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn-reset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-registro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*************** HEADER ***************/
+.menu {
+    background: #FF0000;
+
+    width: 100vw;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    margin: 0;
+}
+
+.menu-item {
+    color: #FFFFFF;
+}
+
+.icon {
+    display: flex;
+}
+
+.a-sobre:hover,
+.a-produtos:hover,
+.a-fale-conosco:hover {
+    color: #FFFFFF;
+}
+
+.a-sobre,
+.a-produtos,
+.a-fale-conosco {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*************** LOGIN ***************/
+.container-login {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#email,
+#senha {
+    margin-top: 10px;
+    height: 30px;
+    width: 330px;
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+.texto-reset,
+.texto-registro {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+/*************** RESET ***************/
+.container-reset {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-reset {
+    margin-bottom: 10px;
+}
+
+.alert-success {
+    margin-top: 10px;
+}
+
+#email-reset {
+    margin-top: 10px;
+    height: 30px;
+    width: 330px;
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+/*************** REGISTER ***************/
+.container-registro {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-registro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*************** REGISTER COMPANY ***************/
+.container-registro-empresa {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding: 40px;
+}
+
+.titulo-registro-empresa,
+.texto-registro-empresa {
+    text-align: center;
+}
+
+.questao1,
+.questao2,
+.questao3,
+.questao4,
+.questao5 {
+    margin-top: 15px;
+}
+
+#nome-registro,
+#email-registro,
+#endereco-registro,
+#bairro-registro,
+#cidade-registro {
+    float: left;
+    width: 85%;
+    margin-top: 10px;
+    color: #000000;
+}
+
+#telefone-registro,
+#cnpj-registro,
+#numero-registro,
+#cep-registro,
+#estado-registro {
+    float: right;
+    width: 15%;
+    margin-top: 10px;
+
+    color: #000000;
+}
+
+#input-question3,
+#input-question5 {
+    width: 100%;
+    height: 30px;
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+/*************** REGISTER USER ***************/
+.container-registro-usuario {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding: 40px;
+}
+
+#cpf-registro {
+    float: right;
+    width: 15%;
+    margin-top: 10px;
+
+    color: #000000;
+}
+
+/*************** CADASTRO ALIMENTO ***************/
+.container-cadastro-alimento {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding: 40px;
+}
+
+#nome-cadastro-alimento,
+#alimentos,
+#arquivo-cadastro-alimento {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#quantidade-cadastro-alimento,
+#data-cadastro-alimento {
+    float: right;
+    width: 50%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/*************** HOME ***************/
+.primeiro-bloco,
+.segundo-bloco {
+    margin-top: 25px;
+    height: 600px;
+    width: 100vw;
+
+    display: flex;
+}
+
+.lado-esquerdo,
+.lado-direito {
+    height: 100%;
+    width: 100vw;
+}
+
+.texto-1,
+.texto-2 {
+    height: calc(100% - 90px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.titulo-texto,
+.titulo-texto-2 {
+    font-size: 56px;
+}
+
+.texto-principal,
+.texto-principal-2 {
+    width: 50%;
+}
+
+.imagem-1 {
+    width: 80%;
+    height: 80%;
+}
+
+/*************** CONTACT US ***************/
+.container-contato {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-contato {
+    margin-top: 10px;
+    height: 30px;
+    width: 390px;
+
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+#textarea {
+    width: 400px;
+    height: 250px;
+
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.grupo-contato {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.whatsapp {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-whatsapp {
+    width: 60px;
+}
+
+/*************** PRODUCTS ***************/
+.primeiro-bloco-produtos {
+    height: calc(100vh - 90px);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5%;
+}
+
+.produto-container {
+    width: 13.87em;
+    height: 21.12em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F5F5F5;
+
+    border-radius: 40px;
+}
+
+.header-titulo {
+    height: 70px;
+    width: 16.75em;
+    background: #FF0000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+    border-radius: 20px;
+}
+
+.titulo-produto,
+.titulo-produto-carrinho {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.container-btn {
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 52%;
+}
+
+.box-btn {
+    width: 16.75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trocar-imagem-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fffFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.virar-botao {
+    transform: rotate(180deg);
+}
+
+.produto-container-pequeno {
+    padding: 0.2em 2em;
+    background: #EDEDED;
+    border-radius: 20px;
+    position: fixed;
+    top: 70%;
+}
+
+.texto-produto-1,
+.texto-produto-2,
+.texto-produto-3,
+.texto-produto-4 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.container-btn-quantidade {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 71.5%;
+}
+
+.box-btn-quantidade {
+    width: 8.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trocar-quantidade-btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+#laranja-imagem,
+#maca-imagem,
+#tomate-imagem,
+#alface-imagem {
+    top: 50%;
+    height: 100px;
+    position: fixed;
+}
+
+#laranja-imagem-carrinho,
+#alface-imagem-carrinho {
+    top: 50%;
+    height: 100px;
+    position: fixed;
+}
+
+.dsmovie-pagination-box form {
+    width: 100%;
+    display: flex;
+}
+
+.carrinho-container {
+    width: 13.87em;
+    height: 21.12em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F5F5F5;
+
+    border-radius: 40px;
+}
+
+#carrinho {
+    position: fixed;
+    top: 75%;
+}
+
+/* CARRINHO */
+.primeiro-bloco-carrinho {
+    height: calc(100vh - 90px);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5%;
+}
+
+.produto-container {
+    width: 13.87em;
+    height: 21.12em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F5F5F5;
+
+    border-radius: 40px;
+}
+
+/******************** FOOTER ********************/
+.footer {
+    background-color: #121213;
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-size: 18px;
+    padding: 50px 10px 50px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer .left {
+    width: 100%;
+    float: left;
+    border-bottom: 1px #222424 solid;
+    border-right: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .title-footer {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+
+}
+
+/* Footer links */
+.footer .links {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+
+.footer .links a {
+    display: block;
+    line-height: 33px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer .links a:hover {
+    color: #FF0000;
+}
+
+.footer .Copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+
+}
+
+/*Responsive*/
+@media (min-width: 1280px) {
+
+    .footer {
+        padding: 100px 50px 50px 100px;
+    }
+
+    .footer .Copyright {
+        font-size: 16px;
+    }
+
+    .footer form input,
+    .footer form textarea {
+        width: 100%;
+        float: left;
+    }
+
+    .footer form button {
+        padding: 10px 35px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .footer .left {
+        width: 48%;
+        border-bottom: 0;
+    }
+
+    .footer .right {
+        width: 48%;
+        padding-left: 4%;
+        border-left: 1px #222424 solid;
+    }
+
+    .footer form {
+        margin-top: 30px;
+    }
+
+    .footer form {
+        display: block;
+    }
+
+    .footer form button {
+        float: none;
+    }
+
+}
